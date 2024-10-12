@@ -1,0 +1,17 @@
+ - &footballAssociation
+    Name: FOOTBALLASSOCIATIONMSP
+    ID: FOOTBALLASSOCIATIONMSP
+    MSPDir: ../organizations/peerOrganizations/footballAssociation.club.com/msp
+    Policies:
+      Readers:
+        Type: Signature
+        Rule: "OR('FOOTBALLASSOCIATIONMSP.admin', 'FOOTBALLASSOCIATIONMSP.peer', 'FOOTBALLASSOCIATIONMSP.client')"
+      Writers:
+        Type: Signature
+        Rule: "OR('FOOTBALLASSOCIATIONMSP.admin', 'FOOTBALLASSOCIATIONMSP.client')"
+      Admins:
+        Type: Signature
+        Rule: "OR('FOOTBALLASSOCIATIONMSP.admin')"
+      Endorsement:
+        Type: Signature
+        Rule: "OR('FOOTBALLASSOCIATIONMSP.peer')"
