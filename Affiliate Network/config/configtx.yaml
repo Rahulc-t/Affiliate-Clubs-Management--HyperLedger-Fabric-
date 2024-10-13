@@ -175,5 +175,4 @@ Profiles:
         - *AllStar
         - *AllStarAfrica
         - *AllStarAsia
-        - *footballAssociation
       Capabilities: *ApplicationCapabilities

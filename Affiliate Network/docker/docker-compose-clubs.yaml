@@ -8,7 +8,7 @@ volumes:
   peer0.allStarAsia.club.com:
   peer0.footballAssociation.club.com:
 
-network:
+networks:
   affiliateClubs:
     name: affiliateClub_fabric
 
@@ -189,7 +189,7 @@ services:
   
   peer0.allStarAfrica.club.com:
     container_name: peer0.allSatrAfrica.club.com
-    image: hyperledger/fabric-peer:2.5.84
+    image: hyperledger/fabric-peer:2.4.7
     labels:
       service: hyperledger-fabric
     environment:
@@ -250,7 +250,7 @@ services:
   
   peer0.allStarAsia.club.com:
     container_name: peer0.allSatrAsia.club.com
-    image: hyperledger/fabric-peer:2.5.84
+    image: hyperledger/fabric-peer:2.4.7
     labels:
       service: hyperledger-fabric
     environment:
@@ -310,7 +310,7 @@ services:
   
   peer0.footballAssociation.club.com:
     container_name: peer0.footballAssociation.club.com
-    image: hyperledger/fabric-peer:2.5.84
+    image: hyperledger/fabric-peer:2.4.7
     labels:
       service: hyperledger-fabric
     environment:

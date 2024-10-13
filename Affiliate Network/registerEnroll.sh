@@ -110,7 +110,7 @@ cp "${PWD}/organizations/peerOrganizations/allStar.club.com/msp/config.yaml" "${
 # Generating the org admin msp
 echo "Generating the org admin msp"
 set -x
-fabric-ca-client enroll -u https://manufactureradmin:manufactureradminpw@localhost:7054 --caname ca-allStar -M "${PWD}/organizations/peerOrganizations/allStar.club.com/users/Admin@allStar.club.com/msp" --tls.certfiles "${PWD}/organizations/fabric-ca/allStar/ca-cert.pem"
+fabric-ca-client enroll -u https://allStaradmin:allStaradminpw@localhost:7054 --caname ca-allStar -M "${PWD}/organizations/peerOrganizations/allStar.club.com/users/Admin@allStar.club.com/msp" --tls.certfiles "${PWD}/organizations/fabric-ca/allStar/ca-cert.pem"
 { set +x; } 2>/dev/null
 
 cp "${PWD}/organizations/peerOrganizations/allStar.club.com/msp/config.yaml" "${PWD}/organizations/peerOrganizations/allStar.club.com/users/Admin@allStar.club.com/msp/config.yaml"
